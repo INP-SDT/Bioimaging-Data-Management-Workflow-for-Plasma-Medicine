@@ -13,12 +13,12 @@ import os
 
 # %% log into OMERO using Jupyter notebooks
 """
-To use this handler script please exhange 'hostAdress' by the url of your OMERO instance
+To use this handler script please exhange 'hostAdress' by the url of your OMERO instance and 'hostPort' by your port 
 """
 def Omero_login_Jupyter(usrname, passwrd):
     # setup for omero connection
     try:
-        conn = BlitzGateway(usrname, passwrd, host= hostAdress, port= 4064, secure=True)
+        conn = BlitzGateway(usrname, passwrd, host= hostAdress, port= hostPort, secure=True)
         conn.connect()
         print("Connected to OMERO")
     except AttributeError:
