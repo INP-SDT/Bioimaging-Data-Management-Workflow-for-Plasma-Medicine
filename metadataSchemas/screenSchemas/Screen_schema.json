@@ -1,0 +1,236 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Screen metadata schema",
+  "type": "object",
+  "properties": {
+    "screen": {
+      "title": "Screen",
+      "description": "High content imaging project",
+      "required": [
+        "screenID",
+        "screenTitle"
+      ],
+      "properties": {
+        "screenID": {
+          "title": "Screen ID",
+          "description": "INP_*first letter of firstname as capital**first and last letter of lastname as capital*_*eLabFTW_experiment_ID of the upload (only necessary during data publication)*\n\n",
+          "type": "string"
+        },
+        "screenTitle": {
+          "title": "Screen title",
+          "description": "Has to be the same as in the OMERO server, where the described data are stored.",
+          "type": "string"
+        },
+        "screenAuthor": {
+          "type": "string",
+          "title": "Screen author",
+          "description": ""
+        },
+        "screenDescription": {
+          "title": "Screen description",
+          "description": "link to the protocol",
+          "type": "string"
+        },
+        "screenDate": {
+          "type": "string",
+          "title": "Screen date",
+          "description": "yyyy-mm-dd"
+        },
+        "plate": {
+          "type": "object",
+          "title": "Plate",
+          "description": "",
+          "properties": {
+            "plateID": {
+              "title": "Plate ID",
+              "description": "INP_*first letter of firstname as capital**first and last letter of lastname as capital*_*eLabFTW_experiment_ID of the upload (only necessary during data publication)*",
+              "type": "string"
+            },
+            "plateTitle": {
+              "title": "Plate title",
+              "description": "Has to be the same as in the OMERO server, where the described data are stored.",
+              "type": "string"
+            },
+            "plateDescription": {
+              "title": "Plate description",
+              "description": "",
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "title": "Description",
+                  "description": ""
+                },
+                "cellInformation": {
+                  "type": "object",
+                  "title": "Cell information",
+                  "description": "",
+                  "properties": {
+                    "strainIdentity": {
+                      "type": "object",
+                      "title": "Strain identity",
+                      "description": "",
+                      "properties": {
+                        "cellOrganism": {
+                          "title": "Cell organism",
+                          "description": "Name the cell/tissue strain, which was used in the investigation",
+                          "type": "string"
+                        },
+                        "Organism_term_accession_number": {
+                          "title": "Organism term accession number",
+                          "description": "Use ATCC or DSM to find the number",
+                          "type": "string"
+                        },
+                        "Organism_term_accession_number_source_REF": {
+                          "title": "Organism term accession number source REF",
+                          "description": "Add here the used reference database such as ATCC or DSM",
+                          "type": "string"
+                        },
+                        "Biological_entity": {
+                          "title": "Biological entity",
+                          "description": "type of cell",
+                          "type": "string"
+                        },
+                        "Biological_entity_term_accession_number": {
+                          "title": "Biological entity term accession number",
+                          "description": "Use ATCC or DSM to find the number",
+                          "type": "string"
+                        },
+                        "Biological_entity_term_accession_number_source_REF": {
+                          "title": "Biological entity term accession number source REF",
+                          "description": "Add here the used reference database such as ATCC or DSM",
+                          "type": "string"
+                        },
+                        "phenotype": {
+                          "title": "Phenotype",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "genotype": {
+                          "title": "Genotype",
+                          "description": "",
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "cultureMedia": {
+                      "title": "Culture media",
+                      "description": "",
+                      "properties": {
+                        "mediaType": {
+                          "title": "mediaType",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "mediaVolume": {
+                          "title": "Media volume [\\mu L]",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "mediaConcentration": {
+                          "title": "Media concentration [mM]",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "ph": {
+                          "title": "pH",
+                          "description": "",
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 14
+                        },
+                        "additives": {
+                          "title": "Additives",
+                          "description": "",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "additives": {
+                                "title": "Additive",
+                                "description": "Name of the used additive",
+                                "type": "string"
+                              },
+                              "volumeOfAdditives": {
+                                "title": "Volume of additives [\\mu L]",
+                                "description": "Volume of the used additive",
+                                "type": "number"
+                              },
+                              "additiveConcentration": {
+                                "title": "Additive concentration [%]",
+                                "description": "Concentration of the used additive",
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "seedingDensity": {
+                      "type": "number",
+                      "title": "Seeding density [cell/ \\mu L]",
+                      "description": ""
+                    },
+                    "layerDescription": {
+                      "type": "string",
+                      "title": "Layer description",
+                      "description": "",
+                      "enum": [
+                        "Monolayer",
+                        "Multilayer"
+                      ]
+                    }
+                  }
+                }
+              },
+              "type": "object"
+            },
+            "plateDate": {
+              "type": "string",
+              "title": "Plate date",
+              "description": "yyyy-mm-dd"
+            },
+            "creatorName": {
+              "type": "string",
+              "title": "Creator name",
+              "description": ""
+            },
+            "experimentType": {
+              "title": "Experiment type",
+              "description": "",
+              "type": "string"
+            },
+            "plateFeatures": {
+              "title": "Plate features",
+              "description": "Plate type, material, color, amount of wells, bottom shape, ",
+              "type": "string"
+            },
+            "imagingWithLid": {
+              "type": "boolean",
+              "title": "Imaging with lid",
+              "description": ""
+            },
+            "microscopeName": {
+              "title": "Microscope name",
+              "description": "",
+              "type": "string"
+            }
+          },
+          "required": [
+            "plateDate",
+            "creatorName",
+            "plateID",
+            "plateTitle"
+          ]
+        },
+        "biologicalMetadata": {
+          "title": "Biological metadata",
+          "description": "Please upload here the Excel file containing the biological metadata.",
+          "type": "string",
+          "contentEncoding": "base64"
+        }
+      },
+      "type": "object"
+    }
+  }
+}
