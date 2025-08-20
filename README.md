@@ -1,2 +1,25 @@
 # Jupyter4OMERO
-This repository contains some relevant Jupyter notebooks for data annotation in the image database OMERO.
+<img width="1889" height="590" alt="1_NDFI_Logo 4c" src="https://github.com/user-attachments/assets/e90ed5f8-325f-4b9e-b238-48c4b9ad1075" />
+This repository contains relevant Jupyter notebooks for the bioimage data workflow designed at the Leibniz Institute for Plasma Science and Technology as part of the [NFDI4Bioimage consortium](https://nfdi4bioimage.de/home/).
+annotating images in the image database OMERO with metadata from the electronic laboratory notebook [eLabFTW](https://www.elabftw.net/).
+
+## Changelog
+### [x.x.x] September xx, 2025
+* Initial release of the GitHub repository
+
+## Set up
+A running Jupyter environment is necessary to run the provided notebooks.
+In case of need follow the [Installation guideline](https://jupyter.org/install).
+
+## Usage
+
+## Support
+Support is available by:
+  * Robert Wagner (robert.wagner@inp-greifswald.de)
+  * Dr. Mohsen Ahmadi (mohsen.ahmadi@inp-greifswald.de)
+  * Dr. Markus Becker (markus.becker@inp-greifswald.de).
+
+## Grant information
+The work is funded by the Deutsche Forschungsgemeinschaft (DFG) – project number [NFDI46/1] - 501864659 
+<img width="477" height="81" alt="image" src="https://github.com/user-attachments/assets/f931aece-28b3-40cd-a54e-abb7240c5a12" />
+
