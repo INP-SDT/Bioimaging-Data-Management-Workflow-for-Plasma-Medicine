@@ -15,16 +15,36 @@ A running Jupyter environment is necessary to run the provided notebooks.
 All notebooks were designed and tested on Python 3.12.5.
 In case of need follow the [installation guideline](https://jupyter.org/install).
 
-Set up
+## Dependencies 
+Mostly depends on your set up Python environment but here is a short list of the important dependencies
+* [**Elabapi**](https://pypi.org/project/elabapi-python/)
+* [**OMERO-py**](https://pypi.org/project/omero-py/)
+* [**Openpyxl**](https://pypi.org/project/openpyxl/)
+* [**Pandas**](https://pypi.org/project/pandas/)
 
 ## Usage
+To use the provided Jupyter notebooks, the two Python scripts [OMERO_handler.py](OMERO_handler.py) and [elabFTW_Api_handler.py](elabFTW_Api_handler.py) must be located in the same working directory as the notebook.
+To access the respective OMERO and eLabFTW instances, the host addresses must be adjusted in the respective handler scripts.
+### eLabFTW
+The codeline (l. 43) has to be changed:
+```
+configuration.host = 'hostAdress'
+```
+the 'hostAdress' variable has to be replaced by the actual host url adress of your eLabFTW instance
 
+### OMERO
+The codeline (l. 21) has to be changed:
+```
+conn = BlitzGateway(usrname, passwrd, host= hostAdress, port= hostPort, secure=True)
+```
+the 'hostAdress' variable has to be replaced by the actual host url adress of your OMERO instance
 
 ## Support
+In case of found bugs or problems please use GitHub issues.
 Support is available by:
   * Robert Wagner (robert.wagner@inp-greifswald.de)
   * Dr. Mohsen Ahmadi (mohsen.ahmadi@inp-greifswald.de)
-  * Dr. Markus Becker (markus.becker@inp-greifswald.de).
+  * Dr. Markus Becker (markus.becker@inp-greifswald.de)
 
 ## Grant information
 The work is funded by the Deutsche Forschungsgemeinschaft (DFG) – project number [NFDI46/1] - 501864659 
