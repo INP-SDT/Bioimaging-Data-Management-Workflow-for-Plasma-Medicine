@@ -1,3 +1,3 @@
 # Annotation notebooks
 
-Here will be all annotation workflows be placed
+Here will all annotation related Jupyter notebooks be placed
