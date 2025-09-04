@@ -153,7 +153,50 @@ def annotate_plate(conn, plateName, jsonData, excelData, wellBool: bool = False)
                             map_ann.setValue(map_ann.getValue() + newKeyValuePair)
             except KeyError:
                 pass        
+
+            # second case for existence of Plasma-MDS metadata
+            try:
+                jsonData["source"]["name"] 
+                # add newKeyValuePairs to an empty annotation list
+                map_ann_plas = omero.gateway.MapAnnotationWrapper(conn)
+                # Use 'client' namespace to allow editing in Insight & web
+                map_ann_plas.setNs("Plasma metadata")
+                # initialize boolean for switch from empty to filled map annotation
+                noMapAnnotationYet = True
+                for key, value in jsonData["source"].items():
+                    newKeyValuePair = [(key, str(value))]
+                    if noMapAnnotationYet == True:
+                        map_ann_plas.setValue(newKeyValuePair)
+                        noMapAnnotationYet = False
+                    else:
+                        map_ann_plas.setValue(map_ann_plas.getValue() + newKeyValuePair)
+                for key, value in jsonData["medium"].items():
+                    newKeyValuePair = [(key, str(value))]
+                    if noMapAnnotationYet == True:
+                        map_ann_plas.setValue(newKeyValuePair)
+                        noMapAnnotationYet = False
+                    else:
+                        map_ann_plas.setValue(map_ann_plas.getValue() + newKeyValuePair)
+                for key, value in jsonData["target"].items():
+                    newKeyValuePair = [(key, str(value))]
+                    if noMapAnnotationYet == True:
+                        map_ann_plas.setValue(newKeyValuePair)
+                        noMapAnnotationYet = False
+                    else:
+                        map_ann_plas.setValue(map_ann_plas.getValue() + newKeyValuePair)
+                for key, value in jsonData["diagnostics"].items():
+                    newKeyValuePair = [(key, str(value))]
+                    if noMapAnnotationYet == True:
+                        map_ann_plas.setValue(newKeyValuePair)
+                        noMapAnnotationYet = False
+                    else:
+                        map_ann_plas.setValue(map_ann_plas.getValue() + newKeyValuePair)
+            except KeyError:
+                pass  
+            
             plate.linkAnnotation(map_ann)
+            plate.linkAnnotation(map_ann_plas)
+            
             print("Plate metadata are linked to plate: " + plateName)
             
             if wellBool == True:
@@ -194,3 +237,4 @@ def annotate_plate(conn, plateName, jsonData, excelData, wellBool: bool = False)
                                             well_map_ann.setValue(well_map_ann.getValue() + newKeyValuePair)
                                 well.linkAnnotation(well_map_ann)
                             print("Wells of plate", plateName, "are annotated")
+
