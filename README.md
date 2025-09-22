@@ -2,6 +2,8 @@
   <img width="176" height="60" alt="1_NDFI_Logo 4c" src="media/NFDI4BIOIMAGE_logo.png" />
 </p>
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)](https://zenodo.org/records/16561545)
+
 # Jupyter4OMERO
 This repository contains relevant Jupyter notebooks for the bioimage data workflow (published on [Zenodo](https://doi.org/10.5281/zenodo.16412003)) designed at the Leibniz Institute for Plasma Science and Technology as part of the [NFDI4Bioimage consortium](https://nfdi4bioimage.de/home/).
 The provided notebook is used for annotating images in the image database [OMERO](https://www.openmicroscopy.org/omero/) with metadata from the electronic laboratory notebook [eLabFTW](https://www.elabftw.net/).
