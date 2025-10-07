@@ -49,6 +49,6 @@ Support is available by:
   * Dr. Markus Becker (markus.becker@inp-greifswald.de)
 
 ## Grant information
-The work is funded by the Deutsche Forschungsgemeinschaft (DFG) – project number [NFDI46/1] - 501864659 
+The work is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under the National Research Data Infrastructure – NFDI 46/1 – 501864659
 <img width="400" height="100" alt="image" src="media/dfg_logo_schriftzug_blau_foerderung_en.gif" />
 
