@@ -2,6 +2,18 @@
   <img width="176" height="60" alt="1_NDFI_Logo 4c" src="media/NFDI4BIOIMAGE_logo.png" />
 </p>
 
+<table width="100%" cellspacing="0" cellpadding="0" style="border: none;">
+  <tr>
+    <td align="left" style="border: none; width: 0%;">
+      <img width="176" height="60" alt="1_NDFI_Logo 4c" src="media/INP_logo.jpg" />
+    </td>
+    <td style="border: none; width: 100%;"></td>
+    <td align="right" style="border: none; width: 0%;">
+       <img width="176" height="60" alt="1_NDFI_Logo 4c" src="media/NFDI4BIOIMAGE_logo.png" />
+    </td>
+  </tr>
+</table>
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)
 
 # Jupyter4OMERO
