@@ -25,7 +25,7 @@ Mostly depends on your set up Python environment but here is a short list of the
 * [**Pandas**](https://pypi.org/project/pandas/)
 
 ## Usage
-To use the provided Jupyter notebooks, the two Python scripts [OMERO_handler.py](OMERO_handler.py) and [elabFTW_Api_handler.py](elabFTW_Api_handler.py) must be located in the same working directory as the notebook.
+To use the provided Jupyter notebooks, the two Python scripts [OMEROHandler.py](OMEROHandler.py) and [elabFTWApiHandler.py](elabFTWApiHandler.py) must be located in the same working directory as the notebook.
 To access the respective OMERO and eLabFTW instances, the host addresses must be adjusted in the respective handler scripts.
 ### eLabFTW
 The codeline (l. 43) has to be changed:
