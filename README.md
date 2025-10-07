@@ -9,7 +9,7 @@ This repository contains relevant Jupyter notebooks for the bioimage data workfl
 The provided notebook is used for annotating images in the image database [OMERO](https://www.openmicroscopy.org/omero/) with metadata from the electronic laboratory notebook [eLabFTW](https://www.elabftw.net/).
 
 ## Changelog
-### [x.x.x] September xx, 2025
+### [x.x.x] October xx, 2025
 * Initial release of the GitHub repository
 
 ## Set up
@@ -28,14 +28,14 @@ Mostly depends on your set up Python environment but here is a short list of the
 To use the provided Jupyter notebooks, the two Python scripts [OMEROHandler.py](OMEROHandler.py) and [elabFTWApiHandler.py](elabFTWApiHandler.py) must be located in the same working directory as the notebook.
 To access the respective OMERO and eLabFTW instances, the host addresses must be adjusted in the respective handler scripts.
 ### eLabFTW
-The codeline (l. 43) has to be changed:
+The codeline (l. 43) in elabFTWApiHandler.py has to be changed:
 ```
 configuration.host = 'hostAdress'
 ```
 the 'hostAdress' variable has to be replaced by the actual host url adress of your eLabFTW instance
 
 ### OMERO
-The codeline (l. 21) has to be changed:
+The codeline (l. 21) in OMEROHandler.py has to be changed:
 ```
 conn = BlitzGateway(usrname, passwrd, host= hostAdress, port= hostPort, secure=True)
 ```
