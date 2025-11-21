@@ -1,16 +1,16 @@
 <p align="right">
-   <img width="176" height="60" alt="1_NDFI_Logo 4c" src="media/INP_logo.jpg" />
-   <img width="176" height="60" alt="NFDI4BIOIMAGE Logo" src="media/NFDI4BIOIMAGE_logo.png">
+   <img width="176" height="60" alt="INP logo" src="media/inplogo.jpg" />
+   <img width="176" height="60" alt="NFDI4BIOIMAGE logo" src="media/nfdi4bioimagelogo.png">
 </p>
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)
 
-# Jupyter4OMERO // New: Bioimage Data Workflow for Plasma Medicine
+# Bioimage Data Workflow for Plasma Medicine
 This repository contains relevant Jupyter notebooks for the bioimage data workflow (published on [Zenodo](https://doi.org/10.5281/zenodo.16412003)) designed at the Leibniz Institute for Plasma Science and Technology as part of the [NFDI4Bioimage consortium](https://nfdi4bioimage.de/home/).
 The provided notebook is used for annotating images in the image database [OMERO](https://www.openmicroscopy.org/omero/) with metadata from the electronic laboratory notebook [eLabFTW](https://www.elabftw.net/). The metadata collection proposed in this workflow is carried-out using [Adamant](https://github.com/plasma-mds/adamant).
 
 ## Changelog
-### [x.x.x] October xx, 2025
+### [x.x.x] November xx, 2025
 * Initial release of the GitHub repository
 
 ## Set up
@@ -26,17 +26,17 @@ Mostly depends on your set up Python environment but here is a short list of the
 * [**Pandas**](https://pypi.org/project/pandas/)
 
 ## Usage
-To use the provided Jupyter notebooks, the two Python scripts [OMEROHandler.py](scripts/OMEROHandler.py) and [elabFTWApiHandler.py](scripts/elabFTWApiHandler.py) must be located in the same working directory as the notebook.
+To use the provided Jupyter notebooks, the two Python scripts [omerohandler.py](scripts/omerohandler.py) and [elabftwapihandler.py](scripts/elabftwapihandler.py) must be located in the same working directory as the notebook.
 To access the respective OMERO and eLabFTW instances, the host addresses must be adjusted in the respective handler scripts.
 ### eLabFTW
-The codeline (l. 43) in elabFTWApiHandler.py has to be changed:
+The codeline (l. 43) in elabftwapihandler.py has to be changed:
 ```
 configuration.host = 'hostAdress'
 ```
 the 'hostAdress' variable has to be replaced by the actual host url adress of your eLabFTW instance
 
 ### OMERO
-The codeline (l. 21) in OMEROHandler.py has to be changed:
+The codeline (l. 21) in omerohandler.py has to be changed:
 ```
 conn = BlitzGateway(usrname, passwrd, host= hostAdress, port= hostPort, secure=True)
 ```
@@ -52,5 +52,5 @@ Support is available by:
 ## Grant information
 The work is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under the National Research Data Infrastructure – NFDI 46/1 – 501864659
 
-<img width="400" height="100" alt="image" src="media/dfg_logo_schriftzug_blau_foerderung_en.gif" />
+<img width="400" height="100" alt="image" src="media/dfglogoschriftzugblaufoerderungen.gif" />
 
