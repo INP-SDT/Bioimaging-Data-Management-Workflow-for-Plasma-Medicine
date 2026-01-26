@@ -1,7 +1,7 @@
-# Metadata schemas for screen objects in OMERO
+# Metadata schemas for OMERO "Screen" objects
 
-The json schema based file [screenschema.json](screenschema.json) contains all important fields for the OMERO annotation carried out by the Jupyter workflow.
+The JSON schema file [screenschema.json](screenschema.json) defines all fields used for OMERO annotations.
 
-The Screen_schema.json contains a file upload field for the biological metadata (which are used to annotate the individual wells), the Jupyter workflow considers a Excel file upload. The template for such a Excel file is provided in [biologicalmetadata.xlsx](biologicalmetadata.xlsx).
+The Screen_schema.json includes a file upload field for biological metadata used to annotate individual wells. The Jupyter workflow expects this metadata to be provided as an Excel file, for which a template is supplied in [biologicalmetadata.xlsx](biologicalmetadata.xlsx).
 
-Plasma metadata are collected with the plasma metadata schema [Plasma-MDS](https://github.com/plasma-mds/plasma-metadata-schema).
+Plasma metadata are collected using the plasma metadata schema [Plasma-MDS](https://github.com/plasma-mds/plasma-metadata-schema).
