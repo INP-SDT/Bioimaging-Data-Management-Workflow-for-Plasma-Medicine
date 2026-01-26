@@ -1,4 +1,4 @@
-# Python scripts for the OMERO workflow
+# Required Python scripts 
 
 This directory contains the Python scripts needed to operate the Jupyter notebook workflow. <br>
 [omerohandler.py](omerohandler.py) provides Python function definitions for OMERO-related operations. <br>
