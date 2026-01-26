@@ -55,5 +55,5 @@ If you find a bug or need help, please open an issue. When reporting a bug, incl
 ## Grant information
 The work is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under the National Research Data Infrastructure – NFDI 46/1 – 501864659.
 
-<img width="400" height="100" alt="image" src="media/dfglogoschriftzugblaufoerderungen.gif" />
+<img width="400" alt="image" src="media/dfglogoschriftzugblaufoerderungen.gif" />
 
