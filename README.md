@@ -12,7 +12,7 @@ The notebook is used for annotating images in the image database [OMERO](https:/
 The metadata collection proposed in this workflow is carried-out using [Adamant](https://github.com/plasma-mds/adamant) and [Micro-Meta App](https://wu-bimac.github.io/MicroMetaApp.github.io/).
 
 ## Changelog
-### [x.x.x] November xx, 2025
+### [x.x.x] January 26, 2026
 * Initial release of the GitHub repository
 
 ## Set up
