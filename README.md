@@ -6,10 +6,10 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)
 
 # Bioimaging Data Management Workflow for Plasma Medicine
-This repository contains the bioimage data workflow (published on [Zenodo](https://doi.org/10.5281/zenodo.16412003)) designed at the Leibniz Institute for Plasma Science and Technology as part of the [NFDI4Bioimage consortium](https://nfdi4bioimage.de/home/).
+This repository contains the Data Management Workflow (published on [Zenodo](https://doi.org/10.5281/zenodo.16412003)) designed at the Leibniz Institute for Plasma Science and Technology as part of the [NFDI4Bioimage consortium](https://nfdi4bioimage.de/home/).
 The workflow is implemented as a Jupyter notebook called [workflow.ipynb](workflow.ipynb).
 The notebook is used for annotating images in the image database [OMERO](https://www.openmicroscopy.org/omero/) with metadata from the electronic laboratory notebook [eLabFTW](https://www.elabftw.net/).
-The metadata collection proposed in this workflow is carried-out using [Adamant](https://github.com/plasma-mds/adamant).
+The metadata collection proposed in this workflow is carried-out using [Adamant](https://github.com/plasma-mds/adamant) and Micro-Meta App [https://wu-bimac.github.io/MicroMetaApp.github.io/]
 
 ## Changelog
 ### [x.x.x] November xx, 2025
