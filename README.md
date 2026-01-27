@@ -47,7 +47,7 @@ conn = BlitzGateway(usrname, passwrd, host= hostAdress, port= hostPort, secure=T
 ```
 the 'hostAdress' variable has to be replaced by the actual host url adress of your OMERO instance.
 
-The adjusted notebook can be accessed by opening the .ipynb file in the JupyterLab environment (for some local JupyterLab instances, simply double-clicking on the downloaded and adjusted .ipynb file may suffice).
+The adjusted notebook can be accessed by opening the .ipynb file in a JupyterLab environment; in some local JupyterLab installations, double-clicking the downloaded, modified .ipynb file may be sufficient.
 
 ## Support
 If you find a bug or need help, please open an issue. When reporting a bug, include the version, OS, steps to reproduce, expected vs actual behavior, and any logs or screenshots.
