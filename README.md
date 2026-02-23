@@ -8,7 +8,7 @@
 -->
 
 # Bioimaging Data Management Workflow for Plasma Medicine
-This repository contains the Jupyter notebook implementation of a bioimaging data management workflow for plasma medicine (see preprint and [poster](https://doi.org/10.5281/zenodo.16412003)). The workflow is implemented as a structured pipeline integrating open-source tools, including  [OMERO](https://www.openmicroscopy.org/omero/) for image data management, [eLabFTW](https://www.elabftw.net/) as an electronic laboratory notebook, [Adamant](https://github.com/plasma-mds/adamant) for schema-driven metadata collection, and [Micro-Meta App](https://wu-bimac.github.io/MicroMetaApp.github.io/) for standardized documentation of microscopy acquisition settings that are connected via programming interfaces to enable persistent linkage of metadata to image datasets using standardized annotations.
+This repository contains the Jupyter notebook implementation of a bioimaging data management workflow for plasma medicine (see [preprint](https://doi.org/10.64898/2026.01.26.700509 ) and [poster](https://doi.org/10.5281/zenodo.16412003)). The workflow is implemented as a structured pipeline integrating open-source tools, including  [OMERO](https://www.openmicroscopy.org/omero/) for image data management, [eLabFTW](https://www.elabftw.net/) as an electronic laboratory notebook, [Adamant](https://github.com/plasma-mds/adamant) for schema-driven metadata collection, and [Micro-Meta App](https://wu-bimac.github.io/MicroMetaApp.github.io/) for standardized documentation of microscopy acquisition settings that are connected via programming interfaces to enable persistent linkage of metadata to image datasets using standardized annotations.
 
 <!--
 ## Changelog
