@@ -52,6 +52,9 @@ The adjusted notebook can be accessed by opening the .ipynb file in a JupyterLab
 ## Support
 If you find a bug or need help, please open an issue. When reporting a bug, include the version, OS, steps to reproduce, expected vs actual behavior, and any logs or screenshots.
 
+## How to cite
+Ahmadi M, Wagner R, Bekeschus S, Becker MM, Bioimaging Data Management Workflow for Plasma Medicine. BioRxiv. 2026; DOI: 10.64898/2026.01.26.700509. 
+
 ## Grant information
 The work is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under the National Research Data Infrastructure – NFDI 46/1 – 501864659.
 
