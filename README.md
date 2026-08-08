@@ -8,7 +8,7 @@
 -->
 
 # Bioimaging Data Management Workflow for Plasma Medicine
-This repository contains the Jupyter notebook implementation of a bioimaging data management workflow for plasma medicine (see [preprint](https://doi.org/10.64898/2026.01.26.700509 ) and [poster](https://doi.org/10.5281/zenodo.16412003)). The workflow is implemented as a structured pipeline integrating open-source tools, including  [OMERO](https://www.openmicroscopy.org/omero/) for image data management, [eLabFTW](https://www.elabftw.net/) as an electronic laboratory notebook, [Adamant](https://github.com/plasma-mds/adamant) for schema-driven metadata collection, and [Micro-Meta App](https://wu-bimac.github.io/MicroMetaApp.github.io/) for standardized documentation of microscopy acquisition settings that are connected via programming interfaces to enable persistent linkage of metadata to image datasets using standardized annotations.
+This repository contains the Jupyter notebook implementation of a bioimaging data management workflow for plasma medicine (see [Sci Data paper](https://doi.org/10.1038/s41597-026-07982-x ) and [poster](https://doi.org/10.5281/zenodo.16412003)). The workflow is implemented as a structured pipeline integrating open-source tools, including  [OMERO](https://www.openmicroscopy.org/omero/) for image data management, [eLabFTW](https://www.elabftw.net/) as an electronic laboratory notebook, [Adamant](https://github.com/plasma-mds/adamant) for schema-driven metadata collection, and [Micro-Meta App](https://wu-bimac.github.io/MicroMetaApp.github.io/) for standardized documentation of microscopy acquisition settings that are connected via programming interfaces to enable persistent linkage of metadata to image datasets using standardized annotations.
 
 <!--
 ## Changelog
@@ -53,7 +53,7 @@ The adjusted notebook can be accessed by opening the .ipynb file in a JupyterLab
 If you find a bug or need help, please open an issue. When reporting a bug, include the version, OS, steps to reproduce, expected vs actual behavior, and any logs or screenshots.
 
 ## How to cite
-Ahmadi M, Wagner R, Bekeschus S, Becker MM, Bioimaging Data Management Workflow for Plasma Medicine. BioRxiv. 2026; DOI: 10.64898/2026.01.26.700509. 
+Ahmadi, M., Wagner, R., Bekeschus, S. et al. Data Management Workflow for FAIR Sharing of Bioimaging Datasets in Plasma Medicine. Sci Data 13, 1124 (2026). https://doi.org/10.1038/s41597-026-07982-x 
 
 ## Grant information
 The work is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under the National Research Data Infrastructure – NFDI 46/1 – 501864659.
